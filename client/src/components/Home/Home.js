@@ -31,11 +31,7 @@ const Home = () =>{
     } 
 
     useEffect(()=>{
-        if(countries.length>0){
-            console.log("countries tiene");
-            dispatch(getCountries())
-        }else{
-            console.log("countries no tiene");
+        if(!countries.length>0){
             dispatch(getCountriesAll())
         }
         
@@ -61,11 +57,15 @@ const Home = () =>{
         setCurrentPage(1)
         setOrden(event.target.value)
     }
-    
+    const Recargar = ()=>{
+        dispatch(getCountriesAll())
+    }
     return (
         <div >
             <SearchBar setPage={setCurrentPage}/>
             <div>
+                <button className={style.filterAndOrder} onClick={Recargar}>Recargar paises</button>
+
                 <select className={style.filterAndOrder} onChange={handleOrderName}>
                     <option value="none" selected disabled hidden>Ordena por orden alfabetico</option>
                     <option value='ascAlf'>Ascendente</option>

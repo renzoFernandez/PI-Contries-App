@@ -17,11 +17,7 @@ const reducer = (state = initialState, action) => {
                 error : ''
             }
 
-        case GET_COUNTRIES:
-            return{
-                ...state,
-                error : ''
-            }
+        
         case GET_COUNTRY :
             return{
                 ...state,

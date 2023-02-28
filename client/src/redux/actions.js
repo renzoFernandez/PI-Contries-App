@@ -1,11 +1,6 @@
 import { GET_COUNTRIES , GET_COUNTRY,GET_COUNTRIES_QUERY,CLEAN_COUNTRY,FILTER_CONTINENT,FILTER_ACTIVITY,ORDER_NAME,ORDER_POPULATION,ERROR,GET_ACTIVITIES,GET_COUNTRIES_ALL} from "./action-types";
 import axios from 'axios'
-export const getCountries = ()=>{
-    return async function(dispatch){
-        let response = await axios('http://localhost:3001/countries');
-        return dispatch({type: GET_COUNTRIES , payload : response.data})
-    }
-}
+
 
 export const getCountry = (id) =>{
     return async function(dispatch){

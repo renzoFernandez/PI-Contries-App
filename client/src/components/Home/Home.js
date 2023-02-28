@@ -1,7 +1,7 @@
 import SearchBar from "../SearchBar/SearchBar";
 import { useDispatch , useSelector } from "react-redux";
 import { useEffect } from "react";
-import {getCountries,filterContinent ,filterActivity,orderName,orderPopulation,getActivities} from '../../redux/actions'
+import {getCountries,filterContinent ,filterActivity,orderName,orderPopulation,getActivities,getCountriesAll} from '../../redux/actions'
 import Card from "../Card/Card";
 import { useState } from "react";
 import Paginado from "../Paginado/Paginado";
@@ -31,7 +31,14 @@ const Home = () =>{
     } 
 
     useEffect(()=>{
-        dispatch(getCountries())
+        if(countries.length>0){
+            console.log("countries tiene");
+            dispatch(getCountries())
+        }else{
+            console.log("countries no tiene");
+            dispatch(getCountriesAll())
+        }
+        
         dispatch(getActivities())
     }, [])
 
@@ -59,7 +66,7 @@ const Home = () =>{
         <div >
             <SearchBar setPage={setCurrentPage}/>
             <div>
-                <select className={style.filterAndOrder} onChange={e =>handleOrderName(e)}>
+                <select className={style.filterAndOrder} onChange={handleOrderName}>
                     <option value="none" selected disabled hidden>Ordena por orden alfabetico</option>
                     <option value='ascAlf'>Ascendente</option>
                     <option value='descAlf'>Descendente</option>

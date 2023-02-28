@@ -1,0 +1,41 @@
+.conteiner{
+    height: 70px;
+    border-bottom: 0.5px solid rgb(58, 50, 40);
+}
+
+.lista{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #e9dbc4;
+    overflow: hidden;
+}
+
+.elemento{
+    float: right;
+    margin: 15px 0px 0px 0px;
+}
+
+.elemento button{
+    display: block;
+    background-color: #e9dbc4;
+    text-align: center;
+    padding: 14px 16px;
+    border:0px;
+    text-decoration: none;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.link{
+    text-decoration: none;
+    color: #504430;
+    font-size: large;
+}
+
+
+.elemento button:hover{
+    background-color: #a99e8d;
+}
+

@@ -1,0 +1,27 @@
+.container{
+    
+    width: 250px;
+    height: 230px;
+    margin: 10px;
+    background-color: #dac197;
+    box-shadow: 1px 2px rgba(0,0,0, .2);
+    border-radius: 10px;
+}
+.imagen{
+    margin:  15px 0px 10px 0px;
+    width: 150px;
+    height: 100px;
+}
+
+.container h3{
+    margin:  5px 0px 10px 0px;
+    width: auto;
+}
+
+.container h5{
+    width: auto;
+    margin: 0px;
+    padding: 5px 0px 10px 0px;
+}
+
+

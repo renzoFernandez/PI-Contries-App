@@ -1,0 +1,19 @@
+.cardsBox{
+    display: flex;
+    flex-wrap: wrap;
+    height: 85%;
+    width: 85%;
+    margin:auto;    
+    justify-content: space-evenly;
+    
+}
+
+.filterAndOrder{
+    margin:1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #f4e8d1;
+    color: #504430;
+    font-size: large;
+    
+}

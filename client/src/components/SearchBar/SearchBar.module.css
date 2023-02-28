@@ -1,0 +1,11 @@
+.conteiner{
+    margin: 15px 0px 0px 0px;
+}
+.conteiner label{
+    margin:1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #f4e8d1;
+    color: #504430;
+    font-size: large;
+}

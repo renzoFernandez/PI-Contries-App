@@ -1,0 +1,23 @@
+.landingPage{
+    background-image: url("../../img/fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.button {
+    color: black;
+    margin: auto;
+    text-decoration: none;
+    background-color: white;
+}
+.button:hover{
+
+}
+.link{
+    color: black;
+    text-decoration: none
+}

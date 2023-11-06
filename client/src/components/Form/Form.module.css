@@ -4,8 +4,8 @@
 	width:500px;
 	padding:16px;
 	border-radius:10px;
-	margin:auto;
-	background-color:#ccc;
+	margin:10px auto;
+	background-color:#b9e3f3;
 }
 
 .form label{
@@ -37,7 +37,39 @@ form input[type="submit"]{
 	background-color:#000;
 } 
 
-form p{
-    margin: 3px;
+
+
+.temporada{
+	display: flex;
+	flex-direction: row;
 }
 
+.temporada label{
+	font-size: medium;
+	font-weight: 500;
+}
+.temporada input{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.selectetCountries{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+	height: 10%;
+}
+
+.selectCountry{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	
+}
+
+.selectCountry button{
+	width: 25px;
+	background-color: rgb(225, 8, 8);
+	margin: auto;
+}

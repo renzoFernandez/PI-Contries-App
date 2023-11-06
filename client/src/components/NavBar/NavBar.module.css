@@ -1,41 +1,40 @@
 .conteiner{
-    height: 70px;
+    height: 100px;
     border-bottom: 0.5px solid rgb(58, 50, 40);
+    background: url(C:\Users\Renzo\Desktop\Proyectos\PI-Contries-App\header.png);
+    background-size: cover 
 }
 
 .lista{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #e9dbc4;
     overflow: hidden;
 }
 
 .elemento{
     float: right;
-    margin: 15px 0px 0px 0px;
+    margin: 25px 0px 10px 10px;
 }
 
 .elemento button{
     display: block;
-    background-color: #e9dbc4;
+    background-color: #d4f6f6;
     text-align: center;
     padding: 14px 16px;
-    border:0px;
+    border:0px solid black;
     text-decoration: none;
-    opacity: 1;
-    transition: 0.5s;
     border-radius: 5px;
 }
 
 .link{
     text-decoration: none;
-    color: #504430;
+    color: black;
     font-size: large;
 }
 
 
 .elemento button:hover{
-    background-color: #a99e8d;
+    background-color: #c4f6f6;
 }
 

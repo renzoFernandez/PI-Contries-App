@@ -1,9 +1,8 @@
 .container{
-    
     width: 50%;
     height: 70%;
     margin: auto;
-    background-color: #dac197;
+    background-color: #daf8f8;
     box-shadow: 1px 2px rgba(0,0,0, .2);
     border-radius: 10px;
 }
@@ -13,7 +12,8 @@
 }
 .imagen{
     width: 37%;
-    padding: 80px 0px 0px 100px;
+    padding: 20px 0px 0px 100px;
+    margin: 0px 0px 20px 0px;
 }
 .container h1{
     padding:  20px 0px 0px 0px;
@@ -21,12 +21,20 @@
 }
 
 .data{
-    padding: 90px 0px 10px 80px;
+    padding: 20px 0px 10px 80px;
 }
 .container h5{
     width: auto;
     font-size: 20px;
     padding: 5px 0px 10px 0px;
     margin: 1px;
+}
+
+.containerActivities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 100px;
+    
 }
 
